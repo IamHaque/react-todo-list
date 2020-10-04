@@ -52,6 +52,8 @@ function App() {
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
+    if (task === "") return;
+
     setTask("");
     setTasks([
       ...tasks,

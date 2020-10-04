@@ -13,7 +13,7 @@ const Nav = ({
   return (
     <div className="nav">
       <div className="date">
-        <p>{date}</p>
+        <p className="date-text">{date}</p>
         <p className="active-tasks">
           {tasks.length > 0 ? tasks.length : "No"} Active Tasks
         </p>
