@@ -1,0 +1,51 @@
+/* Nav */
+
+.nav {
+  margin-bottom: 2rem;
+}
+
+.nav,
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-item {
+  cursor: pointer;
+  padding-left: 1rem;
+  color: var(--gray);
+}
+
+.filter-item.active {
+  color: var(--white);
+}
+
+.filter-item:hover {
+  text-decoration: underline;
+}
+
+.active-tasks {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .filter {
+    margin-top: 1rem;
+    align-items: flex-start;
+  }
+
+  .filter-item {
+    font-size: 0.9rem;
+    flex: 1;
+    padding-left: 0;
+  }
+}
